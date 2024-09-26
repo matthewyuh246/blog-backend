@@ -1,0 +1,14 @@
+services:
+  dev-postgres:
+    image: postgres:15.1-alpine
+    ports:
+      - 5436:5432
+    environment:
+      POSTGRES_USER: Yuhri
+      POSTGRES_PASSWORD: Yuhri0611
+      POSTGRES_DB: goblog
+    restart: always
+    networks:
+      - lesson
+networks:
+  lesson:
